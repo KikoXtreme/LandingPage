@@ -1,6 +1,10 @@
 export const Company = () => {
     return (
-        <div>
+        <div id="contact">
+            <div>Company</div>
+            <div>Company</div>
+            <div>Company</div>
+            <div>Company</div>
             <div>Company</div>
             <div>Company</div>
             <div>Company</div>

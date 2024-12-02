@@ -1,0 +1,106 @@
+$max-width-const: 1170px;
+
+.services-section {
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    max-width: 95%;
+    margin: 3rem auto 0;
+
+    @media screen and (min-width: 1200px) {
+        max-width: $max-width-const;
+    }
+
+    h2 {
+        font-weight: 700;
+        text-align: center;
+        font-size: 38px;
+        line-height: 42px;
+        margin: 0rem auto 2rem;
+    }
+
+    h3 {
+        font-weight: 400;
+        text-align: center;
+        font-size: 18px;
+        line-height: 24px;
+        max-width: 93vw;
+        margin: 0rem auto 2rem;
+
+        @media screen and (min-width: 576px) {
+            max-width: 671px;
+        }
+    }
+
+    .boxes-wrapper {
+        display: grid;
+        gap: 1rem;
+
+        @media screen and (min-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (min-width: 1100px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem 0.5rem;
+
+            @media screen and (min-width: 1200px) {
+                padding: 1rem;
+            }
+
+            h4 {
+                font-weight: 700;
+                text-align: center;
+                font-size: 24px;
+                line-height: 28px;
+                margin: 0.5rem auto;
+            }
+
+            p {
+                font-weight: 400;
+                text-align: center;
+                font-size: 16px;
+                line-height: 24px;
+                margin: 0.5rem auto;
+                max-width: 54vw;
+            }
+
+            .br {
+                @media screen and (max-width: 992px) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .btn {
+        cursor: pointer;
+        background: #00BAFF;
+        border-radius: 4px;
+        padding: 24px 32px;
+        color: #FFFFFF;
+        border: 0;
+        display: block;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin: 2rem auto 1rem;
+        box-shadow: 2px 2px 4px 0px #00000033;
+    }
+
+    .btn:hover {
+        transition: 0.1s all linear;
+        transform: scale(1.03);
+    }
+}
