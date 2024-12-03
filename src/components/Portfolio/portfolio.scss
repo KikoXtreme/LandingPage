@@ -1,0 +1,203 @@
+$max-width-const: 1200px;
+
+.work-section {
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    margin: 5rem auto 2rem;
+
+    h2 {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 42px;
+        text-align: center;
+        margin: 0 auto 2rem;
+    }
+
+    h3 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        margin: 0 auto 3rem;
+        max-width: 83vw;
+
+        @media screen and (min-width: 1200px) {
+            max-width: 595px;
+        }
+    }
+
+    .section-wrapper {
+        margin: 2rem auto;
+        max-width: 99%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0.1rem;
+
+        @media screen and (min-width: 1200px) {
+            max-width: $max-width-const;
+            flex-direction: row;
+            gap: 4rem;
+        }
+
+        img {
+            max-width: 94%;
+
+            @media screen and (min-width: 1200px) {
+                max-width: 100%;
+            }
+        }
+
+        .text {
+            text-align: left;
+            max-width: 94%;
+
+            @media screen and (min-width: 576px) {
+                text-align: center;
+            }
+
+            @media screen and (min-width: 1200px) {
+                max-width: 100%;
+                text-align: left;
+            }
+
+            h4 {
+                position: relative;
+                font-weight: 700;
+                font-size: 38px;
+                line-height: 42px;
+                text-align: left;
+                margin-bottom: 3.5rem;
+
+                @media screen and (min-width: 576px) {
+                    text-align: center;
+                }
+
+                @media screen and (min-width: 1200px) {
+                    text-align: left;
+                }
+
+                &::after {
+                    content: "";
+                    background-color: #00BAFF;
+                    width: 330px;
+                    height: 2px;
+                    display: block;
+                    position: absolute;
+                    top: calc(50% + 40px);
+
+                    @media screen and (min-width: 576px) {
+                        left: calc(50% - 155px);
+                    }
+
+                    @media screen and (min-width: 1200px) {
+                        left: calc(50% - 250px);
+                    }
+                }
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 24px;
+                text-align: left;
+                margin-bottom: 2rem;
+
+                @media screen and (min-width: 576px) {
+                    text-align: center;
+                }
+
+                @media screen and (min-width: 1200px) {
+                    text-align: left;
+                }
+            }
+
+            .btn {
+                cursor: pointer;
+                background: #00BAFF;
+                border-radius: 4px;
+                padding: 24px 32px;
+                color: #FFFFFF;
+                border: 0;
+                display: block;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 24px;
+                text-align: center;
+                text-transform: uppercase;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                box-shadow: 2px 2px 4px 0px #00000033;
+                margin: 2rem 0 1rem;
+
+                @media screen and (min-width: 576px) {
+                    margin: 2rem auto 1rem;
+                }
+
+                @media screen and (min-width: 1200px) {
+                    margin: 2rem 0 1rem;
+                }
+            }
+
+            .btn:hover {
+                transition: 0.1s all linear;
+                transform: scale(1.03);
+            }
+        }
+
+        &.reverse-wrapper {
+            @media screen and (min-width: 1200px) {
+                flex-direction: row-reverse;
+            }
+
+            .text {
+                text-align: left;
+
+                @media screen and (min-width: 576px) {
+                    text-align: center;
+                }
+
+                @media screen and (min-width: 1200px) {
+                    text-align: right;
+                }
+
+                h4 {
+                    @media screen and (min-width: 1200px) {
+                        text-align: right;
+                    }
+
+                    &::after {
+                        content: "";
+                        background-color: #00BAFF;
+                        width: 330px;
+                        height: 2px;
+                        display: block;
+                        position: absolute;
+                        top: calc(50% + 40px);
+
+                        @media screen and (min-width: 576px) {
+                            left: calc(50% - 155px);
+                        }
+
+                        @media screen and (min-width: 1200px) {
+                            left: calc(50% - 80px);
+                        }
+                    }
+                }
+
+                p {
+                    @media screen and (min-width: 1200px) {
+                        text-align: right;
+                    }
+                }
+
+                .btn {
+                    @media screen and (min-width: 1200px) {
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+    }
+}
