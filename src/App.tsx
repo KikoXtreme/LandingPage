@@ -8,12 +8,10 @@ import { AgencyServices } from './components/AgencyServices/AgencyServices';
 import { GetStarted } from './components/GetStarted/GetStarted';
 import { Company } from './components/Company/Company';
 import { Footer } from './components/Footer/Footer';
-import { Test } from './components/Test/Test';
 
 function App() {
   return (
     <div className="App">
-      <Test />
       <Menu />
       <Hero />
       <Services />
