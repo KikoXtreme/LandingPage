@@ -6,7 +6,7 @@ import { Services } from './components/Services/Services';
 import { Portfolio } from './components/Portfolio/Portfolio';
 import { AgencyServices } from './components/AgencyServices/AgencyServices';
 import { GetStarted } from './components/GetStarted/GetStarted';
-import { Company } from './components/Company/Company';
+import { LogoButton } from './components/LogoButton/LogoButton';
 import { Footer } from './components/Footer/Footer';
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
       <Portfolio />
       <AgencyServices />
       <GetStarted />
-      <Company />
+      <LogoButton />
       <Footer />
     </div>
   );
