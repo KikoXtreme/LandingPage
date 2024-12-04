@@ -13,25 +13,32 @@
 
     @media screen and (min-width: 1280px) {
         max-width: 1280px;
-        margin: 0 auto 5rem;
+        margin: 0 auto 3rem;
     }
 
     .one-column {
         text-align: left;
         margin: 1rem 0rem;
         max-width: 95vw;
+        border-bottom: 2px solid #EDEDED;
+        width: 100%;
 
         @media screen and (min-width: 992px) {
+            border-bottom: unset;
             margin: 2rem auto;
             max-width: 320px;
         }
 
         @media screen and (min-width: 1280px) {
-            margin: 2rem 0rem;
-            max-width: 360px;
+            margin: 0rem;
+            max-width: 415px;
         }
 
-        h3 {
+        button {
+            cursor: pointer;
+            display: block;
+            background-color: transparent;
+            border: none;
             font-weight: 500;
             color: #646464;
             font-size: 24px;
@@ -51,9 +58,22 @@
         }
 
         .social-networks {
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #EDEDED;
+            width: 100%;
+
+            @media screen and (min-width: 992px) {
+                padding-bottom: unset;
+                border-bottom: unset;
+            }
+
             img {
                 margin-right: 1rem;
             }
         }
+    }
+
+    .one-column.last {
+        border-bottom: none;
     }
 }
