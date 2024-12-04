@@ -4,29 +4,28 @@
     background-position: center;
     padding: 2rem 0;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         background: url('../../../public/assets/desktopbgbanner_v1.jpg') no-repeat center;
     }
 
     .box-wrapper {
         font-family: 'Poppins', sans-serif;
+        color: #1C73A8;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 2rem 1.5rem;
-        max-width: 77vw;
+        padding: 2rem 1rem;
+        max-width: 84%;
         background-color: #FFFFFFE5;
         margin: 2rem auto;
         border-radius: 10px;
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1280px) {
             padding: 2rem 0;
-            max-width: 47vw;
+            max-width: 47%;
         }
 
         h2 {
-            font-family: 'Poppins', sans-serif;
-            color: #1C73A8;
             font-weight: 700;
             font-size: 44px;
             line-height: 48px;
@@ -34,19 +33,18 @@
         }
 
         h3 {
-            color: #1C73A8;
             font-weight: 400;
             font-size: 18px;
             line-height: 24px;
             margin: 0rem auto 1rem;
-            max-width: 540px;
+            max-width: 611px;
         }
 
         .btn {
             cursor: pointer;
             background: #646464;
             border-radius: 4px;
-            padding: 24px 32px;
+            padding: 24px 28px;
             color: #FFFFFF;
             border: 0;
             display: block;
