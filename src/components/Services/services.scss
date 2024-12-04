@@ -1,13 +1,11 @@
-$max-width-const: 1170px;
-
 .services-section {
     font-family: 'Poppins', sans-serif;
     color: #000000;
     max-width: 95%;
     margin: 3rem auto 0;
 
-    @media screen and (min-width: 1200px) {
-        max-width: $max-width-const;
+    @media screen and (min-width: 1280px) {
+        max-width: 1280px;
     }
 
     h2 {
@@ -33,7 +31,7 @@ $max-width-const: 1170px;
 
     .boxes-wrapper {
         display: grid;
-        gap: 1rem;
+        gap: 2rem;
 
         @media screen and (min-width: 768px) {
             grid-template-columns: repeat(2, 1fr);
@@ -51,7 +49,7 @@ $max-width-const: 1170px;
             gap: 1rem;
             padding: 1rem 0.5rem;
 
-            @media screen and (min-width: 1200px) {
+            @media screen and (min-width: 1280px) {
                 padding: 1rem;
             }
 
