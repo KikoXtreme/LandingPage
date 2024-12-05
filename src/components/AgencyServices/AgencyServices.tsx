@@ -1,76 +1,44 @@
 import { useState } from 'react';
+import { items } from './utils';
 import './agencyServices.scss';
 
 export const AgencyServices = () => {
-    const [openArrow, setOpenArrow] = useState(false);
+    const [openItem, setOpenItem] = useState<number | false>(false);
 
-    const toggleOpenArrow = () => {
-        setOpenArrow((prevState) => !prevState);
-        // console.log('openArrow', openArrow);
-    }
+    const toggleOpenSection = (id: number) => {
+        setOpenItem((prevItem) => (prevItem === id ? false : id));
+    };
 
     return (
         <div className="agency-section">
-            <h2>Agency  Services</h2>
+            <h2>Agency Services</h2>
             <div className="section-wrapper">
-                <img src="/assets/agencyservices-images/digiadds.png" alt="digiadds" />
+                <img
+                    src={
+                        openItem
+                            ? items.find((item) => item.id === openItem)?.image
+                            : '/assets/agencyservices-images/chromeye_assignment_digiadds_v1.png'
+                    }
+                    alt="high-tech"
+                    className="section-image"
+                />
                 <div>
-                    <div className="text">
-                        <div className='text-line'>
-                            <h3>Dynamic Digital Ads</h3>
-                            <img
-                                className='arrows'
-                                src={openArrow ? "/assets/icons/arrowup.svg" : "/assets/icons/arrowdown.svg"}
-                                width="40"
-                                height="20"
-                                alt="arrowdown"
-                                onClick={toggleOpenArrow}
-                            />
+                    {items.map((item) => (
+                        <div className={openItem === item.id ? "text open-text" : "text"} key={item.id}>
+                            <div className="text-line">
+                                <h3>{item.title}</h3>
+                                <img
+                                    className="arrows"
+                                    src={openItem === item.id ? "/assets/icons/arrowup.svg" : "/assets/icons/arrowdown.svg"}
+                                    width="40"
+                                    height="24"
+                                    alt="arrow"
+                                    onClick={() => toggleOpenSection(item.id)}
+                                />
+                            </div>
+                            {openItem === item.id && <p>{item.description}</p>}
                         </div>
-                        <p>Dynamic Digital Ads lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque, amet sit dui quis amet gravida felis nibh. Netus erat id et placerat massa.</p>
-                    </div>
-                    <div className="text">
-                        <div className='text-line'>
-                            <h3>3D Visuals</h3>
-                            <img
-                                className='arrows'
-                                src={openArrow ? "/assets/icons/arrowup.svg" : "/assets/icons/arrowdown.svg"}
-                                width="40"
-                                height="20"
-                                alt="arrowdown"
-                                onClick={toggleOpenArrow}
-                            />
-                        </div>
-                        <p>3D Visuals lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque, amet sit dui quis amet gravida felis nibh. Netus erat id et placerat massa.</p>
-                    </div>
-                    <div className="text">
-                        <div className='text-line'>
-                            <h3>Web Assets</h3>
-                            <img
-                                className='arrows'
-                                src={openArrow ? "/assets/icons/arrowup.svg" : "/assets/icons/arrowdown.svg"}
-                                width="40"
-                                height="20"
-                                alt="arrowdown"
-                                onClick={toggleOpenArrow}
-                            />
-                        </div>
-                        <p>Web Assets lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque, amet sit dui quis amet gravida felis nibh. Netus erat id et placerat massa.</p>
-                    </div>
-                    <div className="text">
-                        <div className='text-line'>
-                            <h3>Corporate Identity</h3>
-                            <img
-                                className='arrows'
-                                src={openArrow ? "/assets/icons/arrowup.svg" : "/assets/icons/arrowdown.svg"}
-                                width="40"
-                                height="20"
-                                alt="arrowdown"
-                                onClick={toggleOpenArrow}
-                            />
-                        </div>
-                        <p>Corporate Identity lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque, amet sit dui quis amet gravida felis nibh. Netus erat id et placerat massa.</p>
-                    </div>
+                    ))}
                 </div>
             </div>
         </div>
