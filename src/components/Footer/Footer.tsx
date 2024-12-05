@@ -20,13 +20,13 @@ export const Footer = () => {
                 <button>Follow us:</button>
                 <div className='social-networks'>
                     <a href="https://www.facebook.com/chromeye/" target="_blank" rel="noopener noreferrer">
-                        <img src="/assets/icons/facebookicon.svg" alt="facebook" />
+                        <img src="/LandingPage/assets/icons/facebookicon.svg" alt="facebook" />
                     </a>
                     <a href="https://twitter.com/chromeye" target="_blank" rel="noopener noreferrer">
-                        <img src="/assets/icons/twittericon.svg" alt="twitter" />
+                        <img src="/LandingPage/assets/icons/twittericon.svg" alt="twitter" />
                     </a>
                     <a href="https://www.linkedin.com/company/chromeye/" target="_blank" rel="noopener noreferrer">
-                        <img src="/assets/icons/linkedinicon.svg" alt="linkedin" />
+                        <img src="/LandingPage/assets/icons/linkedinicon.svg" alt="linkedin" />
                     </a>
                 </div>
                 <button onClick={() => (window.location.href = "#contact")}>Contact</button>

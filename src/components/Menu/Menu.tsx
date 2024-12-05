@@ -24,10 +24,10 @@ export const Menu = () => {
     return (
         <div className="menu-section">
             <div className="logo">
-                <img src="/assets/chromeye_logo.svg" alt="logo" />
+                <img src="/LandingPage/assets/chromeye_logo.svg" alt="logo" />
             </div>
             <div className="union" onClick={toggleMenu}>
-                <img src={menuOpen ? "/assets/union-x.png" : "/assets/union.png"} alt="union" />
+                <img src={menuOpen ? "/LandingPage/assets/union-x.png" : "/LandingPage/assets/union.png"} alt="union" />
             </div>
             <div className={menuOpen ? "drop-down" : 'buttons'}>
                 <button className="link" onClick={() => (window.location.href = "#")}>Home</button>

@@ -17,7 +17,7 @@ export const AgencyServices = () => {
                     src={
                         openItem
                             ? items.find((item) => item.id === openItem)?.image
-                            : '/assets/agencyservices/digiadds.png'
+                            : '/LandingPage/assets/agencyservices/digiadds.png'
                     }
                     alt="high-tech"
                     className="section-image"
@@ -29,7 +29,7 @@ export const AgencyServices = () => {
                                 <h3>{item.title}</h3>
                                 <img
                                     className="arrows"
-                                    src={openItem === item.id ? "/assets/icons/arrowup.svg" : "/assets/icons/arrowdown.svg"}
+                                    src={openItem === item.id ? "/LandingPage/assets/icons/arrowup.svg" : "/LandingPage/assets/icons/arrowdown.svg"}
                                     width="40"
                                     height="24"
                                     alt="arrow"
