@@ -17,7 +17,7 @@ export const AgencyServices = () => {
                     src={
                         openItem
                             ? items.find((item) => item.id === openItem)?.image
-                            : '/assets/agencyservices-images/chromeye_assignment_digiadds_v1.png'
+                            : '/assets/agencyservices/digiadds.png'
                     }
                     alt="high-tech"
                     className="section-image"
