@@ -24,7 +24,7 @@ export const Menu = () => {
     return (
         <div className="menu-section">
             <div className="logo">
-                <img src="/LandingPage/assets/chromeye_logo.svg" alt="logo" />
+                <img src="/LandingPage/assets/kikologo.png" alt="logo" width={'220px'}/>
             </div>
             <div className="union" onClick={toggleMenu}>
                 <img src={menuOpen ? "/LandingPage/assets/union-x.png" : "/LandingPage/assets/union.png"} alt="union" />
