@@ -1,8 +1,8 @@
-import './portfolio.scss';
+import './work.scss';
 
-export const Portfolio = () => {
+export const Work = () => {
     return (
-        <div className="work-section">
+        <div id='work' className="work-section">
             <h2>Our Work</h2>
             <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque, amet sit dui quis amet gravida felis nibh. Netus erat id et placerat massa.</h3>
             <div className="section-wrapper reverse-wrapper">
