@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { items } from './utils';
-import './agencyServices.scss';
+import './companyServices.scss';
 
-export const AgencyServices = () => {
+export const CompanyServices = () => {
     const [openItem, setOpenItem] = useState<number | false>(false);
 
     const toggleOpenSection = (id: number) => {
@@ -10,14 +10,14 @@ export const AgencyServices = () => {
     };
 
     return (
-        <div className="agency-section">
-            <h2>Agency Services</h2>
+        <div id='company' className="agency-section">
+            <h2>Company Services</h2>
             <div className="section-wrapper">
                 <img
                     src={
                         openItem
                             ? items.find((item) => item.id === openItem)?.image
-                            : '/LandingPage/assets/agencyservices/digiadds.png'
+                            : '/LandingPage/assets/companyservices/digiadds.png'
                     }
                     alt="high-tech"
                     className="section-image"
