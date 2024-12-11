@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.scss';
-import { Hero } from './components/Hero/Hero';
 import { Menu } from './components/Menu/Menu';
+import { Hero } from './components/Hero/Hero';
 import { Services } from './components/Services/Services';
-import { Portfolio } from './components/Portfolio/Portfolio';
-import { AgencyServices } from './components/AgencyServices/AgencyServices';
+import { Work } from './components/Work/Work';
+import { CompanyServices } from './components/CompanyServices/CompanyServices';
 import { GetStarted } from './components/GetStarted/GetStarted';
 import { LogoButton } from './components/LogoButton/LogoButton';
 import { Footer } from './components/Footer/Footer';
@@ -15,8 +15,8 @@ function App() {
       <Menu />
       <Hero />
       <Services />
-      <Portfolio />
-      <AgencyServices />
+      <Work />
+      <CompanyServices />
       <GetStarted />
       <LogoButton />
       <Footer />

@@ -10,7 +10,7 @@ export const CompanyServices = () => {
     };
 
     return (
-        <div id='company' className="agency-section">
+        <div id='company' className="company-section">
             <h2>Company Services</h2>
             <div className="section-wrapper">
                 <img

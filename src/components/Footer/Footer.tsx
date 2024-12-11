@@ -4,10 +4,10 @@ export const Footer = () => {
     return (
         <div id='contact' className="footer-section">
             <div className="one-column">
-                <button onClick={() => (window.location.href = "/")}>Studio</button>
-                <button onClick={() => (window.location.href = "#work")}>Our Work</button>
+                <button onClick={() => (window.location.href = "#")}>Home</button>
                 <button onClick={() => (window.location.href = "#services")}>Services</button>
-                <button onClick={() => (window.location.href = "#information")}>Information</button>
+                <button onClick={() => (window.location.href = "#work")}>Our Work</button>
+                <button onClick={() => (window.location.href = "#company")}>Company Services</button>
                 <p>Test Landing Page /LP/ created for creativity and fun, built using React and SCSS. The page is hosted on GitHub Pages.</p>
             </div>
             <div className="one-column">
@@ -17,7 +17,7 @@ export const Footer = () => {
                 <button onClick={() => (window.location.href = "#CookiePreferences")}>Cookie Preferences</button>
             </div>
             <div className="one-column last">
-                <button>Follow us:</button>
+                <button className='follow-us'>Follow us:</button>
                 <div className='social-networks'>
                     <a href="https://www.facebook.com/kiril.valkov.1/" target="_blank" rel="noopener noreferrer">
                         <img src="/LandingPage/assets/social/facebook.svg" alt="facebook" />
